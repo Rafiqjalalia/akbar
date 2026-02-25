@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اکبر شنواری ریسٹورنٹ - اصلی پشاوری ذائقہ</title>
+    <meta name="description"
+        content="اکبر شنواری ریسٹورنٹ — پشاوری کڑاہی، بریانی، کباب اور ناشتہ کا بہترین ذائقہ۔ آن لائن آرڈر کریں یا میز ریزرو کریں۔" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ====== LOADING SCREEN ====== -->
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">ASR</div>
+            <div class="loader-title">اکبر شنواری ریسٹورنٹ</div>
+            <div class="loader-sub">اصلی پشاوری ذائقہ</div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== WHATSAPP FLOAT ====== -->
+    <a href="https://wa.me/923091999786" target="_blank" class="whatsapp-float" id="waFloat"
+        title="واٹس ایپ پر آرڈر کریں">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ====== CART BUTTON ====== -->
+    <button class="cart-btn" id="cartBtn" onclick="toggleCart()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- ====== NAV ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle">ASR</div>
+                <div>
+                    <div class="logo-name">اکبر شنواری</div>
+                    <div class="logo-sub">ریسٹورنٹ</div>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">گھر</a></li>
+                <li><a href="#menu">مینو</a></li>
+                <li><a href="#order">آرڈر</a></li>
+                <li><a href="#reservation">ریزرویشن</a></li>
+                <li><a href="#about">ہمارے بارے میں</a></li>
+                <li><a href="#map">مقام</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <span>🔥 تازہ پشاوری کڑاہی صرف 500 روپے &nbsp;&nbsp;&nbsp; ⭐ خصوصی ناشتہ صبح 7 بجے سے دستیاب
+                &nbsp;&nbsp;&nbsp; 🍖 اسپیشل بریانی پیکج 4000 روپے میں 4 سے 6 افراد کے لیے &nbsp;&nbsp;&nbsp; 📞 آرڈر
+                کریں: 03091999786 &nbsp;&nbsp;&nbsp; 🎉 میز بک کروائیں — خاص تقریبات کے لیے &nbsp;&nbsp;&nbsp;</span>
+            <span>🔥 تازہ پشاوری کڑاہی صرف 500 روپے &nbsp;&nbsp;&nbsp; ⭐ خصوصی ناشتہ صبح 7 بجے سے دستیاب
+                &nbsp;&nbsp;&nbsp; 🍖 اسپیشل بریانی پیکج 4000 روپے میں 4 سے 6 افراد کے لیے &nbsp;&nbsp;&nbsp; 📞 آرڈر
+                کریں: 03091999786 &nbsp;&nbsp;&nbsp; 🎉 میز بک کروائیں — خاص تقریبات کے لیے &nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content animate-fade-up">
+            <div class="hero-badge">اصل پشاوری ذائقہ</div>
+            <h1 class="hero-title">اکبر شنواری<br /><span>ریسٹورنٹ</span></h1>
+            <p class="hero-desc">پشاور کی روایتی خوشبو، سیدھے آپ کی میز پر<br />تازہ مصالحے، ہاتھ سے پکی کڑاہی، اصل
+                ذائقہ</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">مینو دیکھیں</a>
+                <a href="https://wa.me/923091999786" target="_blank" class="btn-whatsapp"><i
+                        class="fab fa-whatsapp"></i> واٹس ایپ آرڈر</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">15+</span><span class="stat-label">سال کا تجربہ</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">500+</span><span class="stat-label">روزانہ گاہک</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">50+</span><span class="stat-label">پکوان</span></div>
+            </div>
+        </div>
+        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- ====== MENU ====== -->
+    <section class="section menu-section" id="menu">
+        <div class="section-header animate-fade-up">
+            <span class="section-tag">ہمارا مینو</span>
+            <h2>تازہ پکوان — بہترین ذائقہ</h2>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="menu-tabs animate-fade-up">
+            <button class="tab-btn active" onclick="showCategory('nashta')">🌅 ناشتہ</button>
+            <button class="tab-btn" onclick="showCategory('karahi')">🍲 کڑاہی</button>
+            <button class="tab-btn" onclick="showCategory('biryani')">🍛 بریانی</button>
+            <button class="tab-btn" onclick="showCategory('kabab')">🍖 کباب</button>
+            <button class="tab-btn" onclick="showCategory('drinks')">☕ مشروبات</button>
+        </div>
+
+        <!-- ناشتہ -->
+        <div class="menu-grid" id="nashta">
+            <div class="menu-grid-inner"></div>
+        </div>
+        <!-- کڑاہی -->
+        <div class="menu-grid hidden" id="karahi">
+            <div class="menu-grid-inner"></div>
+        </div>
+        <!-- بریانی -->
+        <div class="menu-grid hidden" id="biryani">
+            <div class="menu-grid-inner"></div>
+        </div>
+        <!-- کباب -->
+        <div class="menu-grid hidden" id="kabab">
+            <div class="menu-grid-inner"></div>
+        </div>
+        <!-- مشروبات -->
+        <div class="menu-grid hidden" id="drinks">
+            <div class="menu-grid-inner"></div>
+        </div>
+    </section>
+
+    <!-- ====== CART SIDEBAR ====== -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> آپ کا آرڈر</h3>
+            <button onclick="toggleCart()" class="cart-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty"><i class="fas fa-utensils"></i>
+                <p>ابھی کوئی آئٹم نہیں</p>
+                <p>مینو سے آئٹم شامل کریں</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none">
+            <div class="cart-total-row"><span>کل رقم:</span><span class="cart-total-amt" id="cartTotal">₨ 0</span></div>
+            <button class="btn-primary w-full" onclick="proceedOrder()">آرڈر دیں <i
+                    class="fas fa-arrow-left"></i></button>
+            <button class="btn-wa-order w-full" onclick="sendWhatsApp()"><i class="fab fa-whatsapp"></i> واٹس ایپ پر
+                بھیجیں</button>
+        </div>
+    </div>
+
+    <!-- ====== ORDER FORM ====== -->
+    <section class="section order-section" id="order">
+        <div class="section-header animate-fade-up">
+            <span class="section-tag">آن لائن آرڈر</span>
+            <h2>گھر بیٹھے آرڈر کریں</h2>
+        </div>
+        <div class="order-container animate-fade-up">
+            <form id="orderForm" onsubmit="submitOrder(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>آپ کا نام <span class="req">*</span></label>
+                        <input type="text" id="oName" placeholder="مکمل نام لکھیں" required />
+                    </div>
+                    <div class="form-group">
+                        <label>فون نمبر <span class="req">*</span></label>
+                        <input type="tel" id="oPhone" placeholder="03XX-XXXXXXX" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>پتہ <span class="req">*</span></label>
+                    <input type="text" id="oAddress" placeholder="مکمل پتہ لکھیں" required />
+                </div>
+                <div class="form-group">
+                    <label>آرڈر کی تفصیل</label>
+                    <textarea id="oItems" rows="3"
+                        placeholder="آئٹم اور مقدار لکھیں (اگر کارٹ استعمال نہیں کیا)"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>ادائیگی کا طریقہ <span class="req">*</span></label>
+                    <div class="payment-grid">
+                        <label class="pay-opt"><input type="radio" name="payment" value="نقد" checked /><span><i
+                                    class="fas fa-money-bill-wave"></i> نقد</span></label>
+                        <label class="pay-opt"><input type="radio" name="payment" value="ایزی پیسہ" /><span><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3b5yzCfSVR9vabr9Bq8feBjSJmQi0FJfXTA&s"
+                                    class="pay-img" alt="EasyPaisa" /> ایزی پیسہ</span></label>
+                        <label class="pay-opt"><input type="radio" name="payment" value="جاز کیش" /><span><img
+                                    src="https://play-lh.googleusercontent.com/oSAPnbr_WCjSOnLRdnkbNmFoQ0iZOOuFO_WIpBe8hLKxZi8LDvSW5o44bnHvFxBKqw=w480-h960-rw"
+                                    class="pay-img" alt="JazzCash" /> جاز کیش</span></label>
+                        <label class="pay-opt"><input type="radio" name="payment" value="یو پیسہ" /><span><i
+                                    class="fas fa-mobile-alt"></i> یو پیسہ</span></label>
+                        <label class="pay-opt"><input type="radio" name="payment" value="کارڈ" /><span><i
+                                    class="fas fa-credit-card"></i> کارڈ</span></label>
+                    </div>
+                </div>
+                <div class="order-cart-preview" id="orderCartPreview"></div>
+                <button type="submit" class="btn-primary w-full submit-btn">
+                    <i class="fas fa-paper-plane"></i> آرڈر بھیجیں
+                </button>
+            </form>
+            <div class="order-info">
+                <h4>⏰ ڈیلیوری معلومات</h4>
+                <p>• ڈیلیوری وقت: 30-45 منٹ</p>
+                <p>• کم از کم آرڈر: ₨ 300</p>
+                <p>• ڈیلیوری چارج: ₨ 50</p>
+                <h4>📞 رابطہ</h4>
+                <a href="https://wa.me/923091999786" target="_blank" class="contact-wa-btn">
+                    <i class="fab fa-whatsapp"></i> 03091999786
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESERVATION ====== -->
+    <section class="section reservation-section" id="reservation">
+        <div class="section-header animate-fade-up">
+            <span class="section-tag">میز ریزرویشن</span>
+            <h2>اپنی میز محفوظ کریں</h2>
+        </div>
+        <div class="reservation-container animate-fade-up">
+            <form id="resForm" onsubmit="submitReservation(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>آپ کا نام <span class="req">*</span></label>
+                        <input type="text" id="rName" placeholder="مکمل نام" required />
+                    </div>
+                    <div class="form-group">
+                        <label>فون نمبر <span class="req">*</span></label>
+                        <input type="tel" id="rPhone" placeholder="03XX-XXXXXXX" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>تاریخ <span class="req">*</span></label>
+                        <input type="date" id="rDate" required />
+                    </div>
+                    <div class="form-group">
+                        <label>وقت <span class="req">*</span></label>
+                        <input type="time" id="rTime" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>افراد کی تعداد <span class="req">*</span></label>
+                        <select id="rGuests" required>
+                            <option value="">منتخب کریں</option>
+                            <option>1-2</option>
+                            <option>3-4</option>
+                            <option>5-6</option>
+                            <option>7-10</option>
+                            <option>10+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>تقریب کی نوعیت</label>
+                        <select id="rOccasion">
+                            <option value="">عام ملاقات</option>
+                            <option>کاروباری میٹنگ</option>
+                            <option>سالگرہ</option>
+                            <option>فیملی گیدرنگ</option>
+                            <option>دوستوں کے ساتھ</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>خاص خواہش</label>
+                    <textarea id="rNote" rows="2" placeholder="کوئی خاص ضرورت ہو تو لکھیں..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-full submit-btn">
+                    <i class="fas fa-calendar-check"></i> میز محفوظ کریں
+                </button>
+            </form>
+            <div class="res-info">
+                <h4>🕐 اوقات کار</h4>
+                <div class="hours-grid">
+                    <div class="hours-row"><span>پیر — جمعہ</span><span>صبح 7 — رات 12</span></div>
+                    <div class="hours-row"><span>ہفتہ — اتوار</span><span>صبح 6 — رات 1</span></div>
+                </div>
+                <div class="res-note"><i class="fas fa-info-circle"></i> ریزرویشن سے کم از کم 2 گھنٹے پہلے بک کروائیں
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT ====== -->
+    <section class="section about-section" id="about">
+        <div class="about-container">
+            <div class="about-img-wrap animate-fade-right">
+                <div class="about-img-card">
+                    <div class="about-logo-big">ASR</div>
+                    <div class="about-logo-name">اکبر شنواری ریسٹورنٹ</div>
+                    <div class="about-est">قائم: 2009</div>
+                </div>
+                <div class="about-badge-float"><i class="fas fa-star"></i> پشاور کا پسندیدہ</div>
+            </div>
+            <div class="about-text animate-fade-left">
+                <span class="section-tag">ہمارے بارے میں</span>
+                <h2>پشاور کی اصل خوشبو، دل کی گہرائیوں سے</h2>
+                <p>اکبر شنواری ریسٹورنٹ 2009 سے پشاور کے ذائقے کو محفوظ رکھ رہا ہے۔ ہمارے باورچی خانے میں روزانہ تازہ
+                    مصالحے پیسے جاتے ہیں اور پکوان پرانی روایتی ترکیبوں کے مطابق تیار کیے جاتے ہیں۔</p>
+                <p>کڑاہی ہو یا بریانی، ناشتہ ہو یا کباب — ہر چیز میں آپ کو پشاور کی اصل مہک ملے گی۔ ہم صرف کھانا نہیں
+                    پیش کرتے، بلکہ ایک مکمل تجربہ دیتے ہیں۔</p>
+                <div class="about-features">
+                    <div class="feat"><i class="fas fa-leaf"></i><span>تازہ اجزاء</span></div>
+                    <div class="feat"><i class="fas fa-fire"></i><span>روایتی ترکیب</span></div>
+                    <div class="feat"><i class="fas fa-heart"></i><span>محبت سے پکایا</span></div>
+                    <div class="feat"><i class="fas fa-truck"></i><span>تیز ڈیلیوری</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== MAP ====== -->
+    <section class="section map-section" id="map">
+        <div class="section-header animate-fade-up">
+            <span class="section-tag">ہمارا مقام</span>
+            <h2>ہمیں یہاں تلاش کریں</h2>
+        </div>
+        <div class="map-container animate-fade-up">
+            <div class="map-wrap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.5!2d72.5063125!3d33.9264375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df1d00399e28eb%3A0x9f1aaa84833ff07a!2sAkbar%20shinwari%20restaurant!5e0!3m2!1sen!2s!4v1"
+                    width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="map-detail"><i class="fas fa-map-marker-alt"></i>
+                    <div><strong>پتہ</strong>
+                        <p>اکبر شنواری ریسٹورنٹ، پشاور</p>
+                    </div>
+                </div>
+                <div class="map-detail"><i class="fas fa-phone"></i>
+                    <div><strong>فون</strong>
+                        <p><a href="tel:+923091999786">03091999786</a></p>
+                    </div>
+                </div>
+                <div class="map-detail"><i class="fab fa-whatsapp"></i>
+                    <div><strong>واٹس ایپ</strong>
+                        <p><a href="https://wa.me/923091999786" target="_blank">03091999786</a></p>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/dir//33.9264375,72.5063125" target="_blank"
+                    class="btn-primary direction-btn">
+                    <i class="fas fa-directions"></i> راستہ دیکھیں
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">ASR</div>
+                <div class="footer-name">اکبر شنواری ریسٹورنٹ</div>
+                <p>پشاور کا اصل ذائقہ، سیدھے آپ کی میز پر</p>
+                <a href="https://wa.me/923091999786" target="_blank" class="footer-wa">
+                    <i class="fab fa-whatsapp"></i> 03091999786
+                </a>
+            </div>
+            <div class="footer-links">
+                <h4>فوری لنک</h4>
+                <ul>
+                    <li><a href="#menu">مینو</a></li>
+                    <li><a href="#order">آرڈر</a></li>
+                    <li><a href="#reservation">ریزرویشن</a></li>
+                    <li><a href="#about">ہمارے بارے میں</a></li>
+                    <li><a href="#map">مقام</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>اوقات کار</h4>
+                <p>پیر — جمعہ: صبح 7 — رات 12</p>
+                <p>ہفتہ — اتوار: صبح 6 — رات 1</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 اکبر شنواری ریسٹورنٹ — جملہ حقوق محفوظ ہیں</p>
+        </div>
+    </footer>
+
+    <!-- ====== SUCCESS MODAL ====== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-icon" id="modalIcon">✅</div>
+            <h3 id="modalTitle">آرڈر موصول ہو گیا!</h3>
+            <p id="modalMsg">ہم جلد آپ سے رابطہ کریں گے۔</p>
+            <button class="btn-primary" onclick="closeModal()">ٹھیک ہے</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
